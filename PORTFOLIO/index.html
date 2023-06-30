@@ -131,9 +131,10 @@
                               <p class="subheading  text-white">Less is more<br>minimalistic in design and
                                  code<br>creating
                                  unique experiences.</p>
-                              <span class="btn-draw btn--white cursor-item mt-3" href="contact.html"><span
-                                    class="btn-draw__text"><span id="myButton" onclick="handleClick()">Click here to
-                                       <span class="orangetext">download my CV.</span></span></span></span>
+                              <a class="btn-draw btn--white cursor-item mt-3" href="./images/cv.ben.3L.pdf" download>
+                                 <span class="btn-draw__text">
+                                    <span id="myButton" onclick="handleClick()">Click here to
+                                       <span class="orangetext">download my CV.</span></span></span></a>
                            </div>
                            <div class="distortion">
                               <img src="images/face.jpg" alt="">
@@ -574,7 +575,6 @@
    function handleClick() {
       var button = document.getElementById('myButton');
       var originalText = button.innerHTML;
-
       button.innerHTML = 'Thank you';
       button.disabled = true; // Optional: Disable the button after clicking
 
