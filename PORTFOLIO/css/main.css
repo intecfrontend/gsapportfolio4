@@ -3,9 +3,16 @@ body {
   height: 100vh;
   margin: 0;
 }
-#about {
+#aboutsection {
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
+
+.movedown {
+  padding-top: 100px;
+}
+
 .cttttontainer {
   width: 100%;
   height: 100%;
