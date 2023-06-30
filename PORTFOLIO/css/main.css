@@ -3,7 +3,9 @@ body {
   height: 100vh;
   margin: 0;
 }
-
+#about {
+  height: 100vh;
+}
 .cttttontainer {
   width: 100%;
   height: 100%;
