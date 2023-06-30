@@ -2205,7 +2205,11 @@ hr {
 }
 
 /* ScrollBar */
-
+#navbarhorizontal {
+  display: flex;
+  flex-direction: row !important;
+  border: 4px solid lime;
+}
 /* width */
 
 ::-webkit-scrollbar {

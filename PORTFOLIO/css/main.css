@@ -50,7 +50,7 @@ section {
   background: #222;
 }
 
-#navbar li {
+#navbar span {
   position: relative;
   float: left;
   line-height: 60px;
@@ -59,7 +59,7 @@ section {
   transition: all 0.2s;
 }
 .activesite,
-#navbar li a {
+#navbar span a {
   position: relative;
   padding: 0px 20px 26px 20px;
   margin-bottom: -22px;
@@ -69,7 +69,7 @@ section {
   background: black;
 }
 
-#navbar li:before {
+#navbar span:before {
   content: '';
   position: absolute;
   left: 50%;
@@ -81,13 +81,13 @@ section {
   transform: rotate(45deg);
   transition: all 0, background 0.2s;
 }
-#navbar li:hover:before {
+#navbar span:hover:before {
   margin-top: 1px;
   border-radius: 50% 50% 0 50%;
   transition: all 0.1s, background 0.2s,
     margin-top 0.2s cubic-bezier(0.5, 30, 0.2, 0);
 }
-#navbar li:hover,
-#navbar li:hover:before {
+#navbar span:hover,
+#navbar span:hover:before {
   background: orange;
 }
