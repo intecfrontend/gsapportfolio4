@@ -26,7 +26,7 @@ body {
   background: gold;
 }
 #three {
-  background: orange;
+  background: ;
 }
 .orangetext {
   color: orange;
@@ -42,15 +42,6 @@ section {
   scroll-snap-align: start;
   /* scroll-margin-left: 100px; */
 }
-
-/* .active {
- margin-bottom: -39px;  transition: all 0.5s ease-in-out;
-
-}
-.active:hover {
-  border-bottom: 6px solid orange;
- height: 73px;
-} */
 
 #navbar {
   list-style: none;
@@ -75,7 +66,6 @@ section {
   text-decoration: none;
   background: black;
 }
-
 #navbar span:before {
   content: '';
   position: absolute;
@@ -88,13 +78,27 @@ section {
   transform: rotate(45deg);
   transition: all 0, background 0.2s;
 }
+
 #navbar span:hover:before {
   margin-top: 1px;
   border-radius: 50% 50% 0 50%;
-  transition: all 0.1s, background 0.2s,
-    margin-top 0.2s cubic-bezier(0.5, 30, 0.2, 0);
+  transition: all 0.1s, background 0.2s ease-in-out,
+    margin-top 0.4s cubic-bezier(0.5, 30, 0.2, 0);
 }
+
 #navbar span:hover,
 #navbar span:hover:before {
   background: orange;
+}
+
+.activation,
+.activation:before {
+  background: orange;
+}
+
+.activation:before {
+  margin-top: 1px;
+  border-radius: 50% 50% 0 50% !important;
+  transition: all 0.1s, background 0.2s ease-in-out,
+    margin-top 0.4s cubic-bezier(0.5, 30, 0.2, 0);
 }
